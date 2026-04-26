@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2024.12.22 - WENLOG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="single">
+    <div class="container">
+        <header class="sys-header">
+            <div class="sys-title">
+                <a href="index.html" class="brand-root">WENLOG</a>
+                <span class="path-separator">/</span>
+                <span class="current-path">2024.07.24</span>
+            </div>
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="square" stroke-linejoin="miter" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="square" stroke-linejoin="miter" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+            </button>
+        </header>
+
+<main class="site-main">
+            <article class="log-entry">
+                <header class="log-header">
+                    <div class="meta-bar"><span>FILE: LOG / BY wen</span></div>
+                    <h1 class="log-title">2024.07.24</h1>
+                </header>
+                <div class="log-content">
+                    <p>Today's work consisted of designing two poster sets for one client, as well as working on an unfinished Amazon A+ design and video editing for another client.</p>
+                    <p>In the evening, when it started raining, Xena drove Sam to the hospital's emergency department due to complications from his circumcision surgery recovery. I couldn't go with them because of work commitments.</p>
+                    <p>Today I renewed my Adobe Creative subscription for another year. Dropbox's trial period expires in four days, and I'm considering whether to purchase it or opt for Google Drive or OneDrive instead. I think this is a necessary cost I must incur for work.</p>
+                </div>
+            </article>
+        </main>
+
+        <footer class="sys-footer">
+            <div class="footer-left">SYS_VERSION: 7.1_LOG // &copy; 2026 ZHENTAO WEN</div>
+            <div class="footer-right">STATUS: ONLINE</div>
+        </footer>
+    </div>
+    
+    <script>
+    !function(){
+        const btn = document.getElementById("theme-toggle");
+        const body = document.body;
+        if(!btn) return;
+        
+        // 检查本地存储
+        if(localStorage.getItem("darkMode") === "true") {
+            body.classList.add("dark-mode");
+        }
+        
+        function toggleTheme(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            // 切换 body 的 dark-mode 类，适配你的 style.css
+            body.classList.toggle("dark-mode");
+            localStorage.setItem("darkMode", body.classList.contains("dark-mode"));
+        }
+        
+        btn.addEventListener("click", toggleTheme, {passive: false});
+        btn.addEventListener("touchend", toggleTheme, {passive: false});
+    }();
+    </script>
+</body>
+</html>
