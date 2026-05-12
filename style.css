@@ -103,6 +103,22 @@ code { padding: 2px 4px !important; }
 /* Footer */
 .sys-footer { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-muted); text-transform: uppercase; display: flex; justify-content: space-between; border-top: 2px solid var(--border-strong); padding-top: 16px; margin-top: 80px; }
 
+/* ==========================================================================
+   Footer Links Coordination (NEW)
+   ========================================================================== */
+.sys-footer a.footer-link {
+    color: var(--text-muted); 
+    text-decoration: none;
+    border-bottom: 1px solid transparent; 
+    transition: all 0.2s ease;
+    text-transform: uppercase; 
+}
+
+.sys-footer a.footer-link:hover {
+    color: var(--accent-color); 
+    border-bottom-color: var(--accent-color); 
+}
+
 /* Mobile */
 @media (max-width: 650px) {
     body { padding: 30px 16px; }
@@ -114,6 +130,7 @@ code { padding: 2px 4px !important; }
     .log-row .col-title { grid-column: 1 / 2; grid-row: 2 / 3; }
     .log-row .col-size { grid-column: 2 / 3; grid-row: 1 / 3; display: flex; align-items: center; justify-content: flex-end; }
     .sys-footer { flex-direction: column; gap: 8px; align-items: flex-start; }
+    .sys-footer a.footer-link { display: inline-block; padding: 4px 0; }
 }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
