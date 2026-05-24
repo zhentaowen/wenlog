@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026.05.17 - WENLOG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="single">
+    <div class="container">
+        <header class="sys-header">
+            <div class="sys-title">
+                <a href="index.html" class="brand-root">WENLOG</a>
+                <span class="path-separator">/</span>
+                <span class="current-path">2026.05.17</span>
+            </div>
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="square" stroke-linejoin="miter" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="square" stroke-linejoin="miter" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+            </button>
+        </header>
+
+<main class="site-main">
+            <article class="log-entry">
+                <header class="log-header">
+                    <div class="meta-bar"><span>FILE: LOG / BY wen</span></div>
+                    <h1 class="log-title">2026.05.17</h1>
+                </header>
+                <div class="log-content">
+                    <p>A cold from late April has left me with a lingering cough that just won't clear up. On Saturday, Xena offered to drive me to the hospital. Naturally, I wanted to put it off and said no. But on Sunday, it was pouring rain, and she brought it up again. I finally gave in.</p>
+<p>We went to the hospital in the afternoon and got a chest X-ray. While we were waiting for the results, Xena suggested we swing by the hospital's dental department to check my lower right second molar.</p>
+<p>Two years ago, I had four wisdom teeth pulled and found out the lower left second molar had been damaged by one of them. I got a root canal and a crown for it at a private clinic last year. At the time, the dentist told me the right side just had a tiny cavity and a simple filling would do. But this time, the hospital dentist took one look and said it likely needs a root canal and a crown, too. He recommended a CT scan to be sure. I got a bit paranoid about the radiation and didn't really want to do it, so I just walked out of the dental department.</p>
+<p>Then we went to pick up my X-ray results and headed back to the respiratory department. The doctor said it was just bronchitis and prescribed some medication. On the way home, we stopped by the private dental clinic where I got my previous crown. The dentist there echoed the hospital—they absolutely needed a CT scan to make a proper judgment. Reluctantly, I gave in and got the scan. The verdict was exactly what the hospital said: I definitely need a root canal and a crown.</p>
+<p>I’m booked for the procedure next Friday afternoon.</p>
+<p>Work is still keeping me busy: the book cover design is stuck in an endless loop of revisions, and the music visualization animation is paused while I wait for the illustration source files. But there is good news! The client for the Chinese character workbook—who completely ghosted me after my trial project earlier this month—finally replied. We officially signed the contract!</p>
+<p>I definitely quoted a lower rate than I should have—I priced it like that simply because I wanted to secure the client. Sigh... Not the best move, but if I can just earn enough this month to cover the mortgage, I'll consider it a victory. Keep pushing.</p>
+</div>
+            </article>
+        </main>
+
+        <footer class="sys-footer">
+            <div class="footer-left">SYS_VERSION: 7.1_LOG // &copy; 2026 ZHENTAO WEN</div>
+            <div class="footer-right">STATUS: ONLINE</div>
+        </footer>
+    </div>
+    
+    <script>
+    !function(){
+        const btn = document.getElementById("theme-toggle");
+        const body = document.body;
+        if(!btn) return;
+        
+        // 检查本地存储
+        if(localStorage.getItem("darkMode") === "true") {
+            body.classList.add("dark-mode");
+        }
+        
+        function toggleTheme(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            // 切换 body 的 dark-mode 类，适配你的 style.css
+            body.classList.toggle("dark-mode");
+            localStorage.setItem("darkMode", body.classList.contains("dark-mode"));
+        }
+        
+        btn.addEventListener("click", toggleTheme, {passive: false});
+        btn.addEventListener("touchend", toggleTheme, {passive: false});
+    }();
+    </script>
+</body>
+</html>
